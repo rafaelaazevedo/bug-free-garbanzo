@@ -42,6 +42,10 @@ typings/
 # Optional npm cache directory
 .npm
 
+# DS_Store
+.DS_Store
+cypress/.DS_Store
+
 # Optional eslint cache
 .eslintcache
 
@@ -59,3 +63,6 @@ typings/
 
 # next.js build output
 .next
+
+# report folders
+target/

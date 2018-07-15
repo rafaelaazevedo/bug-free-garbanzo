@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://wordpress.com/",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportTitle": "Bug Free Report",
+    "reportFilename": "e2e_tests",
+    "reportDir": "target",
+    "saveJson": true
+  },
+  "projectId": "sihntj"
+}

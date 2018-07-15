@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 7
+
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+
+install:
+  - npm install
+
+before_script:
+  - npm e2e
+
+script:
+  - npm run e2e
