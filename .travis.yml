@@ -11,8 +11,5 @@ cache:
 install:
   - npm install
 
-before_script:
-  - npm e2e
-
 script:
   - npm run e2e
