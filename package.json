@@ -40,7 +40,7 @@
   "dependencies": {
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "galen": "^1.0.0",
+    "galenframework-cli": "^2.3.7",
     "pre-commit": "^1.2.2"
   }
 }
