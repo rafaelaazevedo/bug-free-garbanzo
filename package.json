@@ -7,7 +7,8 @@
     "audit": "npm audit",
     "cypress:run": "$(npm bin)/cypress run",
     "e2e": "npm run cypress:run --reporter mochawesome -record --key 5f055bc3-9c72-492f-ac37-8b3d77b0af14",
-    "cypress:open": "$(npm bin)/cypress open"
+    "cypress:open": "$(npm bin)/cypress open",
+    "galen:run": "$(npm bin)/galen test galen/ --recursive --htmlreport target/ui_tests.html"
   },
   "pre-commit": [
     "lint",
@@ -33,14 +34,15 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
+    "galenframework": "^2.3.7",
     "mocha": "^5.2.0",
     "mochawesome": "^3.0.2",
-    "mochawesome-report-generator": "^3.1.2"
+    "mochawesome-report-generator": "^3.1.2",
+    "selenium-standalone": "^6.15.1"
   },
   "dependencies": {
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "galenframework-cli": "^2.3.7",
     "pre-commit": "^1.2.2"
   }
 }
