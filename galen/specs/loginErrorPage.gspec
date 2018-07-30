@@ -1,0 +1,25 @@
+@import common.gspec
+
+@objects
+    user_textfield   input[name='usernameOrEmail']
+    login_button         .button.form-button.is-primary
+    error_message        .form-input-validation.is-error
+
+
+@set
+    login_box_elements_margin           0px
+    error_message_color                 #d94f4f
+
+
+= Error message =
+    | user_textfield, error_message are aligned vertically above each other with ${login_box_elements_margin} margin
+
+    error_message:
+        color ${error_message_color}
+
+
+    @on desktop
+        error_message:
+            above login_button ${login_box_elements_margin}
+    @on mobile
+| error_message, login_button are aligned vertically above each other with ${login_box_elements_margin} margin
