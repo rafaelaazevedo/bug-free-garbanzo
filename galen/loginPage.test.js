@@ -1,19 +1,16 @@
-load("init.js");
-load("pages/LoginPage.js");
+load('init.js')
+load('pages/LoginPage.js')
 
+testOnAllDevices('Login page', '/', function (driver, device) {
+  var loginPage = null
 
-testOnAllDevices("Login page", "/", function (driver, device) {
+  logged('Checking error box', function () {
+    loginPage = new LoginPage(driver).waitForIt()
 
-    var loginPage = null;
+    loginPage.username.typeText('djtfdtfd')
+    loginPage.loginButton.click()
+    loginPage.errorMessage.waitToBeShown()
 
-    logged("Checking error box", function () {
-        loginPage = new LoginPage(driver).waitForIt();
-
-        loginPage.username.typeText("djtfdtfd");
-        loginPage.loginButton.click();
-        loginPage.errorMessage.waitToBeShown();
-
-        checkLayout(driver, "specs/loginErrorPage.gspec", device.tags);
-    });
-
-});
+    checkLayout(driver, 'specs/loginErrorPage.gspec', device.tags)
+  })
+})
