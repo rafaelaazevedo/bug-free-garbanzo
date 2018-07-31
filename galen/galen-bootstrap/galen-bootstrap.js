@@ -38,7 +38,7 @@ GalenEventsHandler.prototype.invokeEvent = function (eventType, arguments) {
 
 var $galen = {
     settings: {
-        website: "http://localhost",
+        website: "http://wordpress.com/log-in",
         longWordsTesting: {
             groupName: "long_word_test",
             replaceText: "Freundschaftsbezeigungen"

@@ -5,12 +5,10 @@ testOnAllDevices('Login page', '/', function (driver, device) {
   var loginPage = null
 
   logged('Checking error box', function () {
-    loginPage = new LoginPage(driver).waitForIt()
+    loginPage = new LoginPage(driver)
 
-    loginPage.username.typeText('djtfdtfd')
-    loginPage.loginButton.click()
-    loginPage.errorMessage.waitToBeShown()
+    loginPage.loginAs('asdfghuygfc')
 
-    checkLayout(driver, 'specs/loginErrorPage.gspec', device.tags)
+    checkLayout(driver, 'galen/specs/loginPage.gspec', device.tags)
   })
 })
