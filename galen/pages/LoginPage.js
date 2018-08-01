@@ -8,5 +8,5 @@ this.LoginPage = $page('Login page', {
     this.username.typeText(user)
     this.loginButton.click()
     this.errorMessage.waitToBeShown()
-    }
+  }
 })
