@@ -23,7 +23,7 @@
     "url": "https://github.com/rafaelaazevedo/bug-free-garbanzo/issues"
   },
   "devDependencies": {
-    "cypress": "^3.0.2",
+    "cypress": "^3.0.3",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
