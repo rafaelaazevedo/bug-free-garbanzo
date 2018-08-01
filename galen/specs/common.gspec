@@ -1,0 +1,9 @@
+@import common-data.gspec
+
+= Skeleton =
+
+    = A page should be centered horizontally inside screen with ${skeleton_max_width} on desktop, but on mobile and tablet it should stretch to screen =
+        | every &skeleton_element is centered horizontally inside screen
+
+        @on desktop
+            | every &skeleton_element has width ${skeleton_max_width}

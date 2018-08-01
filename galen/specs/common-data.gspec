@@ -1,0 +1,14 @@
+@import rules/galen-extras-rules.gspec
+
+@objects
+    header                   #primary .login__form-header-wrapper
+
+@groups
+    skeleton_elements           header
+    skeleton_element            &skeleton_elements
+
+@set
+    skeleton_max_width  400px
+
+    header_mobile_text  Log In — WordPress.com
+    header_desktop_text Log In — WordPress.com

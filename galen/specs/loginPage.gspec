@@ -1,0 +1,15 @@
+@import common.gspec
+
+@objects
+    user_textfield   input[name='usernameOrEmail']
+    login_button         .button.form-button.is-primary
+    error_message        .form-input-validation.is-error
+
+
+@set
+    error_message_color                 "rgb(217, 79, 79)"
+
+
+= Error message =
+    error_message:
+        css color contains ${error_message_color}
