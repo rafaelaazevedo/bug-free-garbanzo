@@ -8,7 +8,6 @@ install:
 
 script:
   - npm run e2e 
-  - npm run layout
 
 addons:
   artifacts: true
