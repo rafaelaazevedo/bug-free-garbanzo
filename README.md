@@ -1,4 +1,4 @@
-# Bug Free Garbanzo [![Travis CI](https://travis-ci.org/rafaelaazevedo/bug-free-garbanzo.svg)](https://travis-ci.org/rafaelaazevedo/bug-free-garbanzo)
+# Bug Free Garbanzo [![Travis CI](https://travis-ci.org/rafaelaazevedo/bug-free-garbanzo.svg)](https://travis-ci.org/rafaelaazevedo/bug-free-garbanzo.svg?branch=master)
 
 Cypress and Galen Study
 
