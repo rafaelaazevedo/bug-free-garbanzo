@@ -3,7 +3,7 @@ RUN useradd -ms /bin/bash garbanzo
 USER garbanzo
 WORKDIR /home/garbanzo/
 COPY *.* /home/garbanzo/
-RUN npm i
+RUN npm install
 RUN firefox --version
 RUN $(npm bin)/cypress verify
-RUN npm run e2e
+RUN npm run e2e && npm run layout
