@@ -6,4 +6,4 @@ COPY *.* /home/garbanzo/
 RUN npm install
 RUN firefox --version
 RUN $(npm bin)/cypress verify
-RUN npm run e2e && npm run layout
+RUN npm run e2e
