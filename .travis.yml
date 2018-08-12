@@ -1,14 +1,18 @@
-language: node_js
+sudo: required
 
-node_js:
-  - 8
+services:
+  - docker
 
-install:
-  - npm install
+before_install:
+- docker pull rafazzevedo/bug-free-garbanzo-cypress:latest
 
 script:
-  - npm run e2e 
+- docker run --name=bug-free-garbanzo-cypress rafazzevedo/bug-free-garbanzo-cypress:latest
 
+after_script:
+  - docker cp bug-free-garbanzo-cypress:home/garbanzo/target target/
+  - docker cp bug-free-garbanzo-cypress:home/garbanzo/cypress/videos target/videos
+  
 addons:
   artifacts: 
     working_dir: target
