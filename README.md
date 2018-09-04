@@ -7,7 +7,7 @@ This project is a study with Cypress and Galen framework, it's just opening the 
 * Install Libraries
 Clone the project and on the terminal, run: <code>npm install</code> 
 
-## CYPRESS (End to End tests)
+## CYPRESS (End-to-end tests)
 In your terminal, run:
 <code>npm run e2e</code>
 
