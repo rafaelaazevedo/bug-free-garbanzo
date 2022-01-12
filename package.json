@@ -1,19 +1,15 @@
 {
   "name": "free-bug-garbanzo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
-    "lint": "$(npm bin)/eslint .",
-    "audit": "npm audit",
-    "e2e": "$(npm bin)/cypress run --reporter mochawesome -record --key 5f055bc3-9c72-492f-ac37-8b3d77b0af14",
-    "cypress:open": "$(npm bin)/cypress open",
-    "verify": "$(npm bin)/cypress verify",
-    "layout": "$(npm bin)/galen test galen/ --recursive --parallel-tests 3 --htmlreport target"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "cy:percy": "percy exec -- cypress run",
+    "e2e": "cypress run --reporter mochawesome -record --key 5f055bc3-9c72-492f-ac37-8b3d77b0af14",
+    "layout": "galen test galen/ --recursive --parallel-tests 3 --htmlreport target"
   },
-  "pre-commit": [
-    "lint",
-    "audit"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rafaelaazevedo/bug-free-garbanzo.git"
@@ -24,24 +20,11 @@
     "url": "https://github.com/rafaelaazevedo/bug-free-garbanzo/issues"
   },
   "devDependencies": {
-    "cypress": "^3.0.3",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-chai-friendly": "^0.4.1",
-    "eslint-plugin-cypress": "^2.0.1",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "galenframework": "^2.3.7",
-    "mocha": "^5.2.0",
-    "mochawesome": "^3.0.2",
-    "mochawesome-report-generator": "^3.1.2"
-  },
-  "dependencies": {
-    "eslint-plugin-jest": "^21.17.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "pre-commit": "^1.2.2"
+    "@percy/cli": "*",
+    "@percy/cypress": "^3.1.1",
+    "cypress": "^9.2.1",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "galenframework-cli": "^2.4.4",
+    "prettier": "^2.5.1"
   }
 }
