@@ -24,7 +24,7 @@
     "@percy/cypress": "^3.1.1",
     "cypress": "^9.2.1",
     "cypress-mochawesome-reporter": "^2.3.0",
-    "galenframework": "^2.4.4",
+    "galenframework-cli": "^2.4.4",
     "prettier": "^2.5.1"
   }
 }
