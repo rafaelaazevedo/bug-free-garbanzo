@@ -1,6 +1,12 @@
 {
   "baseUrl": "https://wordpress.com/",
-  "reporter": "mochawesome",
+  "chromeWebSecurity": false,
+  "video": false,
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 30000,
+  "experimentalStudio": true,
+  "screenshotOnRunFailure": true,
+  "reporter": "cypress-mochawesome-reporter",
   "reporterOptions": {
     "reportTitle": "Bug Free Report",
     "reportFilename": "e2e_tests",
